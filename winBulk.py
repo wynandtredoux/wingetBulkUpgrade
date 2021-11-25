@@ -17,4 +17,5 @@ if __name__ == '__main__':
     parser.add_argument('packages'
                         , help='A list of package names, comma delimited, no spaces between commas', type=str)
     args = parser.parse_args()
+    # perform bulk upgrade with given package names
     winBulk(args.packages.split(','))  # split argument string into list of package names
