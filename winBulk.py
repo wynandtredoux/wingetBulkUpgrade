@@ -15,6 +15,6 @@ if __name__ == '__main__':
     # parse command line arguments
     parser = ArgumentParser(description='Update multiple winget packages')
     parser.add_argument('packages'
-                        , help='A list of package names, comma delimited', type=str)
+                        , help='A list of package names, comma delimited, no spaces between commas', type=str)
     args = parser.parse_args()
     winBulk(args.packages.split(','))  # split argument string into list of package names
