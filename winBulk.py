@@ -3,7 +3,6 @@ from os import system
 
 # take in a list of packages to upgrade using "winget --upgrade <packages>"
 def winBulk(packages):
-    #print(f'\nPackages to be upgraded: {", ".join(packages)}')
     # for each package
     for package in packages:
         print(f'\nUpgrading {package}...')  # print which package is being upgraded
